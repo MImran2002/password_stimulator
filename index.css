@@ -1,0 +1,128 @@
+body{
+    background-color: #dce4ee;
+    background-size: cover;
+    font-size: 20px;
+}
+#user_manual_show{
+    display:block;
+}
+.keylogger_hidden{
+    display:none;
+}
+.keylogger_active{
+    width:300px;
+    height:150px;
+    position:fixed;
+    left: 30px;
+    top: 30px;
+    background-color: #ffffff;
+    border-radius:5px;
+    border-width: 1px;
+    box-shadow: 0px 0px 10px #5e5e5e;
+    display:grid;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+.keylogger_active div{
+    padding-left: 10px;
+}
+.keylogger_active #title{
+    padding-top:10px;
+    font-size: 16pt;
+    font-weight: bold;
+}
+.keylogger_active #keylogger{
+    font-size:12pt;
+}
+.keylogger_active button{
+     margin-left: auto;
+     margin-right: auto;
+}
+#dictionary_attack{
+    display:none;
+}
+#logIn{
+    width: 50%;
+    height:50vh;
+    margin-top:25vh;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+    border-radius: 50px;
+    box-shadow: 0px 0px 800px #5f88b8;
+}
+#svg{
+    background-image: url(9.photon.svg);
+    width: 20vw;
+    background-size: cover;
+    border-radius: 50px 0% 0% 50px;
+}
+.log{
+    display:grid;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 8fr 1fr;
+}
+.log h1{
+    grid-column-start: 2 ;
+    grid-column-end: 3;
+    font-family: "Exo 2", sans-serif;
+    color: #597392;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10%;
+}
+#username{
+    grid-column-start: 2 ;
+    grid-column-end: 3;
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    color: #597392;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+#password{
+    grid-column-start: 2 ;
+    grid-column-end: 3;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 10px;
+    color: #597392;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+#generateReport{
+    grid-column-start: 2 ;
+    grid-column-end: 3;
+    width:80%;
+    height:50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border-style: none;
+    background-image: linear-gradient( to right, #e15d64, #ea7d66);
+    color: #ffffff;
+    font-size:inherit;
+    font-weight: 500;
+    margin-top: 10px;
+}
+input{
+    width:70%;
+    height: 30px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+}
+input:focus{
+    border: 3px solid #ea7d66;
+    border-radius: 4px;
+}
+input:focus{
+    border: 3px solid #ea7d66;
+    border-radius: 4px;
+}
