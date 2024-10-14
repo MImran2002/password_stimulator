@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="logIn">
+        <div class="svg" id="svg"> 
+        </div>
+        <div class="log">
+            <h1 id="welcome">Let's train your password</h1>
+            <div id="username">
+                <label for="username">Username</label>
+                <input type="text" placeholder="User Name" name="username" id="user_username">
+            </div>
+            <div id="password">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" name="password" id="user_password">
+            </div>
+            <button class="btn" id="generateReport">Generate Report</button>
+        </div>
+    </div>
+    <div id="user_manual_show">
+        <header>Please fill in the below personal information section</header>
+        <main>
+            <label for="first_name">First Name:</label>
+            <input type="text" placeholder="First Name" name="first_name">
+            <label for="dob">Date of Birth</label>
+            <input type="text" placeholder="Date of Birth" name="dob">
+            <label for="pob">Place of Birth</label>
+            <input type="text" placeholder="Place of Birth" name="pob">
+            <label for="status">Marriage Status</label>
+            <input type="checkbox" name="status">
+            <button class="btn" id="personalSubmit">Submit</button>
+        </main>
+    </div>
+    <div id="keylogger_attack" class="keylogger_hidden">
+        <div id="title">Action Needed</div>
+        <div id="keylogger">
+            <p>Please click yes to connect to the building wifi.</p>
+            <button id="keylogger_btn">Connect</button>
+        </div>
+    </div>
+    <div id="dictionary_attack">
+        <div></div>
+        <div id="keylogger">
+            <p>Please click yes to connect to the building wifi.</p>
+            <button>Connect</button>
+        </div>
+    </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
+    <script>
+        // Fallback to loading jQuery from a local path if the CDN is unavailable
+        (window.jQuery || document.write('<script src="/scripts/jquery-1.9.0.min.js"><\/script>'));
+    </script>
+    <script src="brute_force.js"></script>
+    <script src="convertor.js" type="module"></script>
+</body>
+</html>
